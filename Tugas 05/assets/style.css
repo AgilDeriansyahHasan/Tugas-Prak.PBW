@@ -1,3 +1,10 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -6,11 +13,27 @@ body {
     color: #333;
 }
 
+/* Header & Title Styles */
 h1, h2 {
     text-align: center;
     color: #333;
 }
 
+h1 {
+    margin-top: 50px;
+    font-size: 3em;
+    color: #4CAF50;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Container */
 .container {
     max-width: 1200px;
     margin: 20px auto;
@@ -20,18 +43,20 @@ h1, h2 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-button {
-    background-color: #007BFF;
+/* Button Styles */
+button, input[type="submit"] {
+    background-color: #28a745;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 10px;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
-button:hover {
-    background-color: #0056b3;
+button:hover, input[type="submit"]:hover {
+    background-color: #218838;
 }
 
 a.button {
@@ -48,6 +73,17 @@ a.button:hover {
     background-color: #218838;
 }
 
+/* Link Styles */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -63,21 +99,7 @@ input[type="text"], input[type="password"], input[type="number"] {
     width: 100%;
 }
 
-input[type="submit"], button {
-    width: 100%;
-    background-color: #28a745;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-input[type="submit"]:hover, button:hover {
-    background-color: #218838;
-}
-
+/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -106,15 +128,27 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
+/* Link Button Styles */
 a {
-    color: #007BFF;
+    display: block;
+    width: 150px;
+    margin: 30px auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
     text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    background-color: #45a049;
 }
 
+/* Header & Footer Styles */
 header, footer {
     background-color: #007BFF;
     color: white;
@@ -123,6 +157,7 @@ header, footer {
     margin-bottom: 20px;
 }
 
+/* Utility Classes */
 .center {
     text-align: center;
 }
@@ -135,3 +170,18 @@ header, footer {
     margin-bottom: 20px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    a {
+        width: 130px;
+        padding: 12px;
+    }
+}
